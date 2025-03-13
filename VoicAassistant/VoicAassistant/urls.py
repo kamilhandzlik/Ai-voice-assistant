@@ -18,8 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.http import JsonResponse
 
-def api_view(request):
-    return JsonResponse({"message": "Hello from Django API!"})
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

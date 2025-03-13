@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import api_view
+from .views import ApiView
 
 urlpatterns = [
-    path("", api_view, name="api-home")
+    path("", ApiView.as_view(), name="api-home")
 ]
